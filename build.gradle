@@ -1,0 +1,28 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.141'
+}
+
+version = '1.0.0'
+group = 'com.example.voxelholes'
+
+base {
+    archivesName = 'voxelholes'
+}
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+neoForge {
+    version = '21.1.259'
+    runs {
+        client { client() }
+        server { server() }
+    }
+    mods {
+        voxelholes { sourceSet sourceSets.main }
+    }
+}
+
+repositories {
+    mavenCentral()
+}

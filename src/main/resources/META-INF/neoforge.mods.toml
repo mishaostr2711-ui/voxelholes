@@ -1,0 +1,16 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="MIT"
+
+[[mods]]
+modId="voxelholes"
+version="1.0.0"
+displayName="Voxel Holes"
+description="Projectiles from any mod leave voxel holes in blocks where they hit."
+
+[[dependencies.voxelholes]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.0,)"
+ordering="NONE"
+side="BOTH"
